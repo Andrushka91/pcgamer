@@ -88,13 +88,21 @@ const misRutas: Routes = [
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
     AngularFireStorageModule,
     AgmCoreModule.forRoot({
       apiKey: ''
     }),
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSyAKiSCNHhHnk4BD1tIr6i6IoNwgPtOqDi8",
+      authDomain: "andrei-hiberus.firebaseapp.com",
+      databaseURL: "https://andrei-hiberus.firebaseio.com",
+      projectId: "andrei-hiberus",
+      storageBucket: "andrei-hiberus.appspot.com",
+      messagingSenderId: "18909716543",
+      appId: "1:18909716543:web:a263c54d765109e1f3988a"
+    }),
     BrowserAnimationsModule,
     RouterModule.forRoot(misRutas),
     HttpClientModule,
