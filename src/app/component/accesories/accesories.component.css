@@ -1,0 +1,49 @@
+#main {
+    background: url(https://cdn.originpc.com/img/gearshop/gearshop-bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    padding: 10vw 0;
+}
+
+#products {
+    padding-top: 6rem;
+    background-color: #151619;
+}
+
+.search {
+    width: 300px;
+    color: white;
+}
+
+.search-box {
+    background-color: black;
+    overflow: hidden;
+    font-size: 20px;
+    height: 40px;
+    border-bottom: 1px solid white;
+}
+
+.product-table mat-header-cell {
+    color: white;
+}
+
+.product-table mat-cell {
+    color: white;
+}
+
+.product-table img {
+    width: 250px;
+}
+
+.product-table mat-table {
+    background-color: black;
+    margin-bottom: 150px;
+}
+
+mat-header-cell {
+    border: solid white 1px;
+}
+.buy{
+    width: 100px;
+}
+
+ 

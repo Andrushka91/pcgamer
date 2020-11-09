@@ -1,0 +1,100 @@
+ 
+ .login-title h1{
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+ .row{
+     margin-bottom: 600px;
+ }
+
+.login-box {
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 8px 0;
+    border-bottom: 1px solid white;
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 100%;
+    color: white;
+}
+
+.textbox label {
+    position: relative;
+    top: .65rem;
+    left: 0;
+    transition: .2s ease-out;
+    cursor: text;
+    color: #757575;
+    font-size: 12px;
+}
+
+.checkbox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.checkbox input {
+    margin-right: 8px;
+}
+
+.login-box .btn {
+    width: 110px;
+    padding: 12px;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 0;
+    background-color: red;
+}
+
+.login-box a {
+    color: red;
+    margin-left: 18px;
+}
+
+.create-account {
+    background-color: #2A2B32;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.create-account h4 {
+    font-weight: bold;
+}
+
+.create-account .btn {
+    width: 180px;
+    padding: 12px;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 0;
+    background-color: red;
+}
+
+.create-account hr {
+    border: 1px solid #1f1d1d;
+}
+
+#terms {
+    margin-top: 20px;
+}
+
+#terms span {
+    color: red;
+}

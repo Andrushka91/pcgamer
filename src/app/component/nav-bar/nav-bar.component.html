@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light overflow-hidden" id="heading">
+    <div class="container">
+        <span class="align-middle">24/7 Lifetime Support 1-877-674-4460 (US & CA)
+            Live Chat
+        </span>
+
+        <span class="align-middle nav justify-content-end">
+            <a href="">Live Chat</a>
+            <a href="">Contact</a>
+        </span>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <div class="row">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <a class="navbar-brand" [routerLink]="['']" routerLinkActive="router-link-active">
+                    <img src="../assets/images/logo.png" />
+                </a>
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link " [routerLink]="['/desktops']"
+                            routerLinkActive="router-link-active">{{ 'nav.desktops' | translate}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " [routerLink]="['/laptops']"
+                            routerLinkActive="router-link-active">{{ 'nav.laptops' | translate}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/accesories']"
+                            routerLinkActive="router-link-active">{{ 'nav.accessories' | translate}}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/special-offers']"
+                            routerLinkActive="router-link-active">{{ 'nav.special-offers' | translate}}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " [routerLink]="['/reviews']"
+                            routerLinkActive="router-link-active">{{ 'nav.reviews' | translate}}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/about']" routerLinkActive="router-link-active">{{ 'nav.about' | translate}}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['']" routerLinkActive="router-link-active">
+                            <div class="search-box">
+                                <img width="24px" src="../../../assets/images/search-icon.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+
+                    <li *ngIf="!loginService.loggedIn" class="nav-item">
+                        <a class="nav-link" [routerLink]="['/sign-in']" routerLinkActive="router-link-active">
+                            <div class="sign-in-box">
+                                <img width="24px" src="../../../assets/images/user.png" />
+                                {{ 'nav.sign-in' | translate}}
+                            </div>
+                        </a>
+                    </li>
+
+                    <li *ngIf="loginService.loggedIn" class="nav-item">
+                        <a class="nav-link" (click)='logOut()' [routerLink]="['']"
+                            routerLinkActive="router-link-active">
+                            <div class="sign-in-box">
+                                <img width="24px" src="../../../assets/images/logout.png" />
+                                {{ 'nav.sign-out' | translate}}
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['']" routerLinkActive="router-link-active">
+                            <img width="20px" src="../../../assets/images/cart.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</nav>

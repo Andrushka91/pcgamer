@@ -1,0 +1,178 @@
+<section class="title">
+
+</section>
+
+<div class="reviews-buttons nav justify-content-center">
+    <div class="row">
+
+
+        <div class="col-12">
+            <ng-template #content let-modal>
+                <div class="modal-header">
+                    <h2 *ngIf="!edit" class="modal-title" id="modal-basic-title">
+                        Add a Review
+                    </h2>
+
+                    <h2 *ngIf="edit" class="modal-title" id="modal-basic-title">
+                        Update a Review
+                    </h2>
+                    <button class="btn btn-danger" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span aria-hidden="true">
+                            ×
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form [formGroup]='newReviewForm' method="GET">
+
+                        <div class="form-group">
+                            <label for="uploadPcImage">
+                                Carga la imagen con el ordenador
+                            </label>
+                            <div class="input-group">
+                                <input (change)="upload($event)" type="file">
+                                <img width="100px" src={{photoUrl}} />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="uploadPcImage">
+                                Review Title
+                            </label>
+                            <div class="input-group">
+                                <input formControlName='title' type="text" />
+                            </div>
+
+                            <div *ngIf="newReviewForm.get('title').invalid" [ngStyle]='{color:"red"}'>
+                                Longitud minima 5 characteres
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="uploadPcImage">
+                                Rating
+                            </label>
+                            <div class="input-group">
+                                <star-rating [value]="5" [totalstars]="5" checkedcolor="gold" uncheckedcolor="gray"
+                                    size="24px" readonly="false" (rate)="onRate($event)">
+                                </star-rating>
+                            </div>
+                        </div>
+
+                        <input formControlName='date'>
+
+                        <div class="form-group">
+                            <label for="uploadPcImage">
+                                Descrption
+                            </label>
+
+                            <div class="input-group">
+                                <textarea formControlName="description" class="md-textarea form-control" cols="30"
+                                    rows="10"></textarea>
+                            </div>
+                            <div *ngIf="newReviewForm.get('description').invalid" [ngStyle]='{color:"red"}'>
+                                Longitud minima 5 characteres
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Name">
+                                Name
+                            </label>
+                            <div class="input-group">
+                                <input formControlName='author' type="text" /> 
+                            </div>
+                            <div *ngIf="newReviewForm.get('author').invalid" [ngStyle]='{color:"red"}'>
+                                Longitud minima 5 characteres
+                            </div>
+                        </div>
+                        <div *ngIf="!edit" class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark"
+                                (click)="addReview();modal.close('Save click')">
+                                Save
+                            </button>
+                        </div>
+
+                        <div *ngIf="edit" class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark"
+                                (click)="updateReview();modal.close('Save click')">
+                                Update
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </ng-template>
+
+            <button class="btn btn-danger" (click)="open(content)">
+                ADD REVIEW
+            </button>
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+
+<div class="container">
+    <h3>Testimonials</h3>
+    <a name="testimonials"></a>
+    <hr />
+
+    <div class="testimonials">
+
+        <div class="row testimony">
+            <div class="review col-lg-4" *ngFor='let review of Reviews'>
+
+                <ul class="list-unstyled">
+
+                    <button class="btn btn-danger" (click)='delete(review.documentId)' aria-label="Close" alt="delete">
+                        <span aria-hidden="true">
+                            X
+                        </span>
+                    </button>
+
+                    <button class="btn btn-danger"
+                        (click)="open(content); edit = true; editableReview = review; getFormData()" id="delete-button"
+                        aria-label="Close" alt="delete">
+                        <span aria-hidden="true">
+                            <img src="../../../assets/images/edit.png" alt="">
+                        </span>
+                    </button>
+
+
+
+
+
+
+
+
+                    <li class="nav justify-content-center">
+                        <img width="300px" src="{{review.photoUrl}}">
+                    </li>
+                    <li>
+                        <p>{{review.title}}</p>
+                    </li>
+
+                    <li>
+                        <star-rating [value]="review.rating" [totalstars]="5" checkedcolor="gold" uncheckedcolor="gray"
+                            size="24px" readonly="false" (rate)="onRate($event)">
+                        </star-rating>
+                    </li>
+
+                    <li><span style="color:red">{{review.date}}</span></li>
+                    <br />
+                    <li>
+                        <p>" {{review.description}}"
+                        </p>
+                    </li>
+                    <li>{{review.author}}</li>
+                </ul>
+            </div>
+
+        </div>

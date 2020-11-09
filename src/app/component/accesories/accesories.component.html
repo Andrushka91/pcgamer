@@ -1,0 +1,70 @@
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Accessories</h1>
+                <h4>
+                    Complete Your PCGAMER Experience with High-Quality Peripherals, Gear, and More.
+                </h4>
+            </div>
+        </div>
+    </div> 
+</section>
+
+
+<section id="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Welcome to the PCGAMER Gearshop, where you can get high-quality accessories including keyboards,
+                    mice, monitors, power accessories, case extras, and more!</p>
+            </div>
+
+            <div class="col-lg-12 search">
+                <mat-form-field class="search">
+                    <label>Search</label>
+                    <input class="search-box" matInput type="email" (keyup)='filtrar($event.target.value)' />
+                </mat-form-field>
+                <!-- <img src="../../../assets//images/corsair-harpoon.webp" alt=""> -->
+            </div>
+
+
+            <div class="col-12 product-table">
+                <mat-table [dataSource]='dataSource' matSort>
+
+                    <ng-container matColumnDef='id'>
+                        <mat-header-cell *matHeaderCellDef mat-sort-header class="nav justify-content-center">&#8470;</mat-header-cell>
+                        <mat-cell *matCellDef='let item' class="nav justify-content-center">{{item.id}}<img src="{{item.photoUrl}}" /></mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef='title'>
+                        <mat-header-cell *matHeaderCellDef mat-sort-header class="nav justify-content-center">Title</mat-header-cell>
+                        <mat-cell *matCellDef='let item' class="nav justify-content-center">{{item.title}}</mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef='description'>
+                        <mat-header-cell *matHeaderCellDef mat-sort-header class="nav justify-content-center">Description</mat-header-cell>
+                        <mat-cell *matCellDef='let item' class="nav justify-content-center">{{item.description}}</mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef='price'>
+                        <mat-header-cell *matHeaderCellDef mat-sort-header class="nav justify-content-center">Price</mat-header-cell>
+                        <mat-cell *matCellDef='let item' class="nav justify-content-around">
+                            {{item.price | currency}}
+                            <button class="btn btn-danger buy">Buy</button>
+
+                        </mat-cell>
+                    </ng-container>
+
+
+                    <mat-header-row *matHeaderRowDef='nombreColumnas'></mat-header-row>
+                    <mat-row *matRowDef='let item; columns: nombreColumnas;'></mat-row>
+
+                </mat-table>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>

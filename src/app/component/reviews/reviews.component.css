@@ -1,0 +1,68 @@
+.title {
+    background: url(../../../assets/images/reviews-1.png) 50% 50% no-repeat;
+    background-size: cover;
+    padding: 12vw 0;
+}
+
+.container {
+    min-width: 1400px;
+}
+
+hr {
+    border: solid #494645 1px;
+    margin-bottom: 0;
+}
+.review{
+    margin-top:30px;
+}
+
+.modal-body{
+    color:black;
+}
+.modal-title{
+    color:black;
+    font-size: 20px;
+}
+
+.reviews-buttons {
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.reviews-buttons .btn {
+    width: 160px;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.testimonials {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.testimony ul {
+    background-color: black;
+    padding: 30px;
+}
+.review{
+    min-width:466px;
+}
+
+#delete-button{
+    margin-left: 4px;
+}
+
+ 
+@media screen and (max-width: 1200px) {
+    .review {
+        width: 800px;
+        margin: 10px;
+    }
+  .line  hr {
+        width: 800px;
+        float: left;
+        position: absolute;
+       
+    }
+}

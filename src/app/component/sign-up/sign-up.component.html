@@ -1,0 +1,37 @@
+<div class="container ">
+    <div class="login-title">
+        <h1>REGISTER</h1>
+    </div>
+
+    <div class="row nav justify-content-center">
+        <div class="col-xl-5 col-lg-6 create-account-box">
+
+            <div class="textbox">
+                <label for="Username" class="active">Email Address</label>
+                <input type="email" [(ngModel)]='email' />
+            </div>
+            <div class="textbox">
+                <label for="Username" class="active">Password</label>
+                <input type="password" [(ngModel)]='password' />
+            </div>
+
+            <a  (click)='register()'>
+                <input class="btn btn-danger" type="button" name="" value="CREATE ACCOUNT">
+            </a>
+
+        </div>
+
+        <div class="col-xl-5 col-lg-6 confirm-account-box">
+
+            <div class="textbox">
+                <label for="Username" class="active">&nbsp;</label>
+                <input type="email" placeholder="Confirm Email Address">
+            </div>
+
+            <div class="textbox">
+                <label for="Username" class="active">&nbsp;</label>
+                <input type="password" placeholder="Confirm password" [(ngModel)]='confirmPassword' />
+            </div>
+        </div>
+    </div>
+</div>

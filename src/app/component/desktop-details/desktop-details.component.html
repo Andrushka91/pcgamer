@@ -1,0 +1,118 @@
+<div class="container-fluid section-1">
+
+    <div class="row nav justify-content-center header-title">
+        <h1>CONFIGURE YOUR SYSTEM</h1>
+    </div>
+
+    <div class="row nav justify-content-center title-section">
+        <p>Case</p>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 order-2 order-lg-1 ">
+                <div class="card">
+                    <div class="case-title">
+                        <p class="text-uppercase">small form factor</p>
+                    </div>
+                    <div class="case-options">
+                        <div class="form-check form-check-block">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">ORIGIN Chronos with Glass</label>
+                        </div>
+                        <div class="form-check form-check-block">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">ORIGIN Chronos with Mesh</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
+                <img width="480px" src={{desktop.imagenConfig}} />
+            </div>
+        </div>
+
+
+        <div class="container nav justify-content-center">
+
+            <div [class]='customClass'>
+                <button type="button" class="btn dropdown-toggle" (click)='changeClass()' data-toggle="collapse"
+                    data-target="#specs">
+                    SPECIFICATIONS
+                </button>
+            </div>
+
+
+            <div id="specs" class="row collapse ">
+                <div class="col-lg-6 collapse-section">
+                    <p>Size</p>
+                    <ul class="list-unstyled">
+                        <li>(W) 7 x (H) 11 x (D) 15.5</li>
+                        <hr />
+                    </ul>
+
+                    <p>Bays</p>
+                    <ul class="list-unstyled">
+                        <li>1 x 3.5" HDD</li>
+                        <hr />
+                        <li>1 x 2.5" SSD</li>
+                        <hr />
+                    </ul>
+
+                    <p>Ports</p>
+                    <ul class="list-unstyled">
+                        <li>1 Headphone Jack</li>
+                        <hr />
+                        <li>1 Microphone Jack</li>
+                        <hr />
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 collapse-section">
+                    <p>USB</p>
+                    <ul class="list-unstyled">
+                        <li>1 x 3.1 Type-C</li>
+                        <hr />
+                        <li>1 x USB 3.0</li>
+                        <hr />
+                    </ul>
+
+                    <p>Special</p>
+                    <ul class="list-unstyled">
+                        <li>Tempered Glass panels or option for Mesh side panels for increased air flow.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrow-section nav justify-content-center">
+            <p><i class="arrow down"></i></p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid section-2">
+    <div class="container">
+
+        <div class="row nav justify-content-center title-section">
+            <p>Design</p>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-lg-6 ">
+                <img src={{desktop.imagenConfig}} alt="">
+            </div>
+
+
+
+            <div class="col-6 col-lg-6 description-section">
+                <p>{{desktop.design}}</p>
+            </div>
+        </div>
+    </div>
+</div>

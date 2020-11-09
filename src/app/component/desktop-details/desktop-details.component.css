@@ -1,0 +1,88 @@
+.container {
+    min-width: 1400px !important;
+}
+
+.section-1 {
+    background-color: #1E1F24;
+}
+
+.header-title {
+    padding-top: 30px;
+}
+
+.title-section {
+    color: grey;
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.card {
+    background-color: transparent;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.case-title {
+    background-color: #34363C;
+    height: 50px;
+    font-size: 12px;
+    padding: 1rem 1.25rem .875rem
+}
+
+.case-options {
+    background-color: black;
+    height: 100px;
+    padding: 1.5rem 1rem;
+}
+
+.btn {
+    width: 700px;
+    height: 50px;
+    background-color: #34363C;
+    color: white;
+    border: 0;
+    font-size: 15px;
+}
+
+.collapse-section {
+    width: 350px;
+    font-size: 15px;
+}
+
+#specs {
+    color: white;
+    padding: 25px;
+}
+
+#specs ul {
+    padding-left: 20px;
+}
+
+hr {
+    border: 1px solid #6c6d75;
+}
+
+.arrow-section {
+    padding: 60px;
+}
+
+.arrow {
+    border: solid #d6d8e0;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 15px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.section-2 {
+    background-color: #2A2B32;
+}
+
+.section-2 p {
+    padding-top: 70px;
+}

@@ -1,0 +1,62 @@
+.page-footer {
+    background-color: #343A40;
+    color: white;
+}
+
+.footer-links {
+    background-color: black;
+    padding: 40px;
+}
+
+.footer-links h6 {
+    user-select: none;
+}
+
+.footer-links a {
+    color: gray;
+}
+
+.footer-links .btn {
+    width: 120px;
+    margin-top: 20px;
+    background-color: #E31B21;
+    padding: 13px;
+    font-size: 13px;
+    font-weight: bold;
+}
+ 
+.footer-contact{
+    background-color:black;
+}
+
+.icons{
+    margin-left:30px;
+    padding-bottom: 30px;
+}
+.icons svg{
+    margin-left: 30px;
+}
+
+.language-button{
+    margin-left: 70px;
+    height: 100%;
+    padding:5px 5px 5px 5px;
+}
+
+.language-button:hover{
+    background-color:rgb(88, 87, 87);
+}
+
+ .language-button svg{
+   margin-right:10px;
+}
+
+.change-language{
+    background-color:transparent;
+    color:white;
+    border:0;
+}
+
+.modal-content{
+    color:black;
+}

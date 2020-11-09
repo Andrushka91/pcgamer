@@ -1,0 +1,83 @@
+ /* Add a black background color to the top navigation */
+
+ .topnav {
+     background-color: #1E1F24;
+     overflow: hidden;
+     padding-top: 30px;
+     padding-bottom: 30px;
+ }
+
+ /* Style the links inside the navigation bar */
+
+ .topnav a {
+     float: left;
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+     border-bottom: 3px solid #2c2d33;
+ }
+
+ .topnav a:hover {
+     border-bottom: 3px solid#454750;
+ }
+
+ .topnav a.active {
+     border-bottom: 3px solid red;
+ }
+
+ .container-fluid {
+     background-color: #1E1F24;
+     display: flex;
+ }
+
+ #desktops {
+     background-color: #1E1F24;
+     color: white;
+     margin: 0 auto;
+ }
+
+ .desktop-items {
+     margin-top: 30px;
+     color: white;
+     padding: 40px;
+ }
+
+ .desktop-items h3 {
+     font-weight: 400;
+ }
+
+ .desktop-items button {
+     margin-top: 13px;
+     font-weight: 700;
+     border-right: 1px dashed white;
+ }
+
+ .desktop-items li {
+     font-size: .9rem;
+     margin-bottom: -5px;
+ }
+
+ .learn-more {
+     font-weight: 400;
+     color: lightgrey;
+     margin-top: 25px;
+     margin-bottom: 50px;
+ }
+
+ .item-description {
+     color: red;
+     font-weight: 600;
+     margin: 0 auto;
+ }
+
+ .item-case {
+     font-weight: 800;
+     font-size: large;
+     font-family: "azo-sans-web", sans-serif;
+     margin: 0 auto;
+ }
+ 
+ 

@@ -1,0 +1,33 @@
+<nav class="topnav nav justify-content-center">
+    <ul>
+        <a href="#">Custom Desktops</a>
+        <a href="#">Hybrid Gaming Desktops</a>
+        <a href="#">Prebuild Desktops</a>
+        <a href="#">Workstation Dekstops</a>
+    </ul>
+</nav>
+
+<h2 class="col-12 text-center" id="desktops">CUSTOM GAMING DESKTOPS</h2>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="text-center col-sm-6 col-lg-3 desktop-items" *ngFor="let desktop of desktops;">
+            <h3>{{desktop.nombre}}</h3>
+            <p class="item-case">{{desktop.caja}}</p>
+            <p class="item-description">{{desktop.descripcion}}</p>
+            <p>{{desktop.precio}}</p>
+            <p><button class="btn btn-danger">CUSTOMIZE</button></p>
+
+            <a routerLink ='/desktop-details/{{desktop.documentId}}'>
+                <img src={{desktop.imagen}} /></a> 
+       
+            <ul class="list-unstyled text-left" *ngFor='let spec of desktop.specs'>
+                <li>{{spec}}</li>
+            </ul>
+
+            <p class="mt-1 text-center"><a class="btn btn-outline-light btn-md waves-effect waves-light learn-more">LEARN MORE</a></p>
+        </div>
+    </div>
+
+</div>

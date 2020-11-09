@@ -1,0 +1,38 @@
+<nav class="topnav nav justify-content-center">
+    <ul>
+        <a href="#">Thin & Light</a>
+        <a href="#">Desktop Replacement</a>
+        <a href="#">Prebuild</a>
+        <a href="#">Workstation Laptops</a>
+    </ul>
+</nav>
+
+<h2 class="col-12 text-center" id="desktops">THIN & LIGHT LAPTOPS</h2>
+
+<div class="container-fluid">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="text-center col-lg-6 desktop-items" *ngFor="let laptop of laptops;">
+                <h3>{{laptop.nombre}}</h3>
+                <p class="item-case">{{laptop.pantalla}}</p>
+                <p class="item-description">{{laptop.descripcion}}</p>
+                <p>Starting at {{laptop.precio | currency}}</p>
+                <p><button class="btn btn-danger">CUSTOMIZE</button></p>
+
+                <a routerLink='/desktop-details/{{laptop.documentId}}'>
+                    <img src={{laptop.imagen}} /></a>
+
+                <ul class="list-unstyled text-left" *ngFor='let spec of laptop.specs'>
+                    <li>{{spec}}</li>
+                </ul>
+
+                <p class="mt-1 text-center"><a
+                        class="btn btn-outline-light btn-md waves-effect waves-light learn-more">LEARN MORE</a></p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
