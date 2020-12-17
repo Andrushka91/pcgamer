@@ -41,10 +41,12 @@
     margin-left: 70px;
     height: 100%;
     padding:5px 5px 5px 5px;
+    padding-top: 0;
 }
 
 .language-button:hover{
     background-color:rgb(88, 87, 87);
+    
 }
 
  .language-button svg{
@@ -55,6 +57,7 @@
     background-color:transparent;
     color:white;
     border:0;
+    
 }
 
 .modal-content{

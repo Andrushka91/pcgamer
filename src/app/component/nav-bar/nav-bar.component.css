@@ -32,12 +32,18 @@
  }
 
 .navbar-brand img {
-    width: 160px;
+    width: 170px;
+}
+
+.navbar{
+ vertical-align: center;
 }
 
 li {
-    margin-right: 33px;
+    margin-right: 33px;   
 }
+
+
 
 .nav-item a {
     color: white !important;
@@ -57,4 +63,4 @@ li {
 .sign-in-box img {
     margin-bottom: 4px;
 }
- 
+
