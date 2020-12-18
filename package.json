@@ -1,5 +1,5 @@
 {
-  "name": "practica-andrei-razmerita",
+  "name": "angular-pc-gamer-shop",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -10,10 +10,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
-  },
-  "engines": {
-    "node": "14.6.0",
-    "npm": "6.14.8"
   },
   "private": true,
   "dependencies": {
@@ -71,5 +67,12 @@
     "typescript": "~4.0.2",
     "zone.js": "~0.10.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+
+  "engines":{
+    "node":"14.15.0",
+    "npm":"6.14.8"
+  }
 }
+ 
+ 
