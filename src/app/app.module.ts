@@ -29,7 +29,6 @@ import { LaptopDetailsComponent } from './component/laptop-details/laptop-detail
 import { SignInComponent } from './component/sign-in/sign-in.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { SignUpComponent } from './component/sign-up/sign-up.component';
-import { AgmCoreModule } from '@agm/core';
 import { RatingModule } from 'ng-starrating';
 import { LoginService } from './services/login.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -89,9 +88,6 @@ const misRutas: Routes = [
     FormsModule,
     ReactiveFormsModule,
     AngularFireStorageModule,
-    AgmCoreModule.forRoot({
-      apiKey: ''
-    }),
     AngularFireModule.initializeApp({
       apiKey: "AIzaSyAKiSCNHhHnk4BD1tIr6i6IoNwgPtOqDi8",
       authDomain: "andrei-hiberus.firebaseapp.com",
