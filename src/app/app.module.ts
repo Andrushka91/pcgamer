@@ -104,7 +104,7 @@ const misRutas: Routes = [
       appId: "1:18909716543:web:a263c54d765109e1f3988a"
     }),
     BrowserAnimationsModule,
-    RouterModule.forRoot(misRutas),
+    RouterModule.forRoot(misRutas, { relativeLinkResolution: 'legacy' }),
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
