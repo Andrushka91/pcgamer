@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Desktop } from '../../models/Desktop';
-import { DesktopService } from '../../services/desktop-service.service';
+import { DesktopsService } from '../../services/desktops.service';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -18,7 +18,7 @@ export class DesktopDetailsComponent implements OnInit {
   customClass: string = '';
 
  
-  constructor(private ruta: ActivatedRoute, private desktopService: DesktopService,private translateService: TranslateService) {
+  constructor(private ruta: ActivatedRoute, private desktopService: DesktopsService,private translateService: TranslateService) {
     this.translateService.use(localStorage.getItem('language'));
     this.id = this.ruta.snapshot.params.codigo;
     this.desktop = null;

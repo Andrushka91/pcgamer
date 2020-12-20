@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ChildrenOutletContexts } from '@angular/router';
-import { DesktopService } from 'src/app/services/desktop-service.service';
 import { Desktop } from '../../models/Desktop';
+import { DesktopsService } from '../../services/desktops.service';
 import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-desktops',
@@ -13,7 +12,7 @@ export class DesktopsComponent implements OnInit {
   desktops: Desktop[] = [];
 
   //Inyectamos el servicio en el constructor para poder llamar al servicio
-  constructor(private desktopService: DesktopService, private translateService: TranslateService) {
+  constructor(private desktopService: DesktopsService, private translateService: TranslateService) {
     // this.desktops = this.desktopService.getDesktops();
     this.translateService.use(localStorage.getItem('language'));
   }

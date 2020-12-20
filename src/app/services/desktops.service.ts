@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { Desktop } from '../models/Desktop';
- 
+import { AngularFirestore } from '@angular/fire/firestore'; 
+
 @Injectable({
   providedIn: 'root'
 })
-export class DesktopService {
+export class DesktopsService {
 
   // desktops: Desktop[] = [
   //   {

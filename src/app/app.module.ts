@@ -15,7 +15,6 @@ import { ReviewsComponent } from './component/reviews/reviews.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { DesktopDetailsComponent } from './component/desktop-details/desktop-details.component';
 
-import { DesktopService } from './services/desktop-service.service';
 import { ReviewService } from './services/review.service';
 import { LanguageService } from './services/language.service';
 
@@ -25,7 +24,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
-import { environment } from 'src/environments/environment';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { LaptopDetailsComponent } from './component/laptop-details/laptop-details.component';
 import { SignInComponent } from './component/sign-in/sign-in.component';
@@ -116,7 +114,7 @@ const misRutas: Routes = [
       }
     })
   ],
-  providers: [DesktopService, AngularFirestore, LoginService, MatPaginatorIntl, ReviewService, DatePipe, LanguageService],
+  providers: [AngularFirestore, LoginService, MatPaginatorIntl, ReviewService, DatePipe, LanguageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

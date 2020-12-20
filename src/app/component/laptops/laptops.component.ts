@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Laptop } from '../../models/Laptops';
-import { LaptopService } from '../../services/laptop-service.service';
+import { LaptopsService } from '../../services/laptops.service';
 import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-laptops',
@@ -13,7 +13,7 @@ export class LaptopsComponent implements OnInit {
   laptops: Laptop[] = [];
 
   //Iyectamos el servicio en el constructor para poder llamar al servicio
-  constructor(private laptopService: LaptopService, private translateService: TranslateService) {
+  constructor(private laptopService: LaptopsService, private translateService: TranslateService) {
     this.translateService.use(localStorage.getItem('language'));
   }
 
